@@ -40,6 +40,7 @@ void do_scan(int sock, iwrange *range)
 			iw_print_stats(buffer, sizeof(buffer), &result->stats.qual, range, 1);
 			printf("stats: %s\n", buffer);
 		}
+		printf("------------------\n");
 		result = result->next;
 	}
 
